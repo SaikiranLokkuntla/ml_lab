@@ -1,6 +1,5 @@
 name: Azure DevOps CI
  
-on: [push]
  
 jobs:
   build:
