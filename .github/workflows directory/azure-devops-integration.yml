@@ -11,6 +11,6 @@ jobs:
     - name: Trigger Azure DevOps Pipeline
       uses: azure/pipelines@v1
       with:
-        azure-devops-project-url: 'https://dev.azure.com/yourOrganization/yourProject'
-        azure-pipeline-name: 'YourPipelineName'
+        azure-devops-project-url: 'https://dev.azure.com/student10672/ML_LAB'
+        azure-pipeline-name: 'ML_LAB'
         azure-devops-token: '${{ secrets.AZURE_DEVOPS_PAT }}'
