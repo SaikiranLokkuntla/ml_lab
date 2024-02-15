@@ -13,4 +13,4 @@ jobs:
       with:
         azure-devops-project-url: 'https://dev.azure.com/student10672/ML_LAB'
         azure-pipeline-name: 'ML_LAB'
-        azure-devops-token: '${{ secrets.AZURE_DEVOPS_PAT }}'
+        azure-devops-token: '${{ secrets.AZURE_DEVOPS_ML_PAT}}'
