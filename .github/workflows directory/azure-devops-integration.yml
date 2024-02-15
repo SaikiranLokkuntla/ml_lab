@@ -1,0 +1,16 @@
+name: Azure DevOps CI
+ 
+on: [push]
+ 
+jobs:
+  build:
+    runs-on: ubuntu-latest
+ 
+    steps:
+    - uses: actions/checkout@v2
+    - name: Trigger Azure DevOps Pipeline
+      uses: azure/pipelines@v1
+      with:
+        azure-devops-project-url: 'https://dev.azure.com/yourOrganization/yourProject'
+        azure-pipeline-name: 'YourPipelineName'
+        azure-devops-token: '${{ secrets.AZURE_DEVOPS_PAT }}'
